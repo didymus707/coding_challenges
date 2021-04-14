@@ -1,0 +1,3 @@
+const repeatedString = (s, n) => {
+  
+}
