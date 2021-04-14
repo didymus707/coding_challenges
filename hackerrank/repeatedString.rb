@@ -2,13 +2,13 @@
 
 def repeatedString(s, n)
   len = s.size
-  str = ''
-  for i in 0...n
-    j = i
-    j = j - len if j >= len
-    str += s[j]
-  end
-  str.split('').count('a')
+  quo = n / len
+  freq_of_a_in_s = s.split('').count('a')
+  rem = n % len
+  freq_of_a_in_rem = s[0...rem].split('').count('a')
+  # formula = quo * freq_of_a_in_s + freq_of_a_in_rem
+  str = quo * freq_of_a_in_s + freq_of_a_in_rem
+  str
 end
 
 p repeatedString('aba', 10)
