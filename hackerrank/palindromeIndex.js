@@ -1,5 +1,4 @@
 const palindromeIndex = s => {
-  debugger
   if (s === [...s].reverse().join("")) return -1
   const len = s.length;
   let result, half;
